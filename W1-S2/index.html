@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        .card {
+            border: 1px solid black;
+            border-radius: 1rem;
+            display: flex;
+            max-width: 500px;
+        }
+
+        .result {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            color: white;
+            text-align: center;
+            border-radius: 1rem;
+            padding: 2rem;
+            border: 1px dotted black;
+            background-color: rgba(0, 0, 255, 0.77);
+        }
+
+        .score {
+            background: linear-gradient(to bottom, rgba(0, 0, 210, 0.75), rgba(0, 0, 240, 0.1));
+            box-shadow: inset;
+            border-radius: 100%;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .score h3 {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        .score p {
+            font-size: 1rem;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        .summary {
+            flex: 1;
+            border: 1px dotted black;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="card">
+        <article class="result">
+            <h2>Your Result</h2>
+            <div class="score">
+                <h3>76</h3>
+                <p>of 100</p>
+            </div>
+
+            <h2>Great</h2>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </article>
+        <article class="summary">a</article>
+    </section>
+</body>
+
+</html>
