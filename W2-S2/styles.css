@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+header .logo {
+    background-color: orangered;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    padding: 2px 3px;
+}
+
+header .header-cta-btn {
+    background-color: #dedede;
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    text-transform: capitalize;
+    color: #666;
+    border: 1px solid black;
+    text-align: center;
+    padding: 1rem;
+}
