@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsible Use of AI</title>
+
+    <style>
+        /* ---- Base Layout ---- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            line-height: 1.7;
+            background: #f5f7fa;
+            color: #222;
+            padding: 2rem;
+        }
+
+        /* ---- Page Structure ---- */
+        main {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ---- Typography ---- */
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: .4rem;
+        }
+
+        h3 {
+            margin-top: 1.5rem;
+        }
+
+        h4 {
+            margin-top: 1rem;
+        }
+
+        p {
+            margin: .6rem 0;
+        }
+
+        ul,
+        ol {
+            margin: .7rem 0 1rem 1.5rem;
+        }
+
+        /* ---- Code Blocks ---- */
+        pre {
+            background: #111;
+            color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: .8rem 0;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        /* ---- Quotes ---- */
+        blockquote {
+            border-left: 4px solid #4f46e5;
+            padding: .8rem 1rem;
+            margin: 1rem 0;
+            background: #f0f3ff;
+        }
+
+        /* ---- Sections ---- */
+        section {
+            margin-bottom: 2rem;
+        }
+
+        article {
+            margin-bottom: 1.5rem;
+        }
+
+        /* ---- Footer ---- */
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: .9rem;
+            color: #666;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Responsible Use of AI</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>1. What AI Actually Is</h2>
+
+            <p>
+                AI (like ChatGPT) is a prediction engine. You are not <q>asking magic</q> — you are programming with
+                language.
+            </p>
+
+            <blockquote>
+                <p><strong>Garbage in → Garbage out.</strong> If your prompt is unclear, the answer will also be
+                    unclear.</p>
+            </blockquote>
+
+            <p>Think: Every prompt = a small program you write.</p>
+        </section>
+
+        <section>
+            <h2>2. The 4 Core Prompt Skills</h2>
+
+            <article>
+                <h3>✅ PERSONA — Who should answer?</h3>
+
+                <p>AI knows many things. You must tell it what expertise to use.</p>
+
+                <h4>Bad Prompt</h4>
+                <pre><code>Explain CSS Grid.</code></pre>
+
+                <h4>Good Prompt</h4>
+                <pre><code>You are a beginner-friendly frontend teacher.
+Explain CSS Grid to students who only know HTML and CSS basics.</code></pre>
+
+                <p>Persona reduces guessing.</p>
+            </article>
+
+            <article>
+                <h3>✅ CONTEXT — What should AI know?</h3>
+
+                <p>AI does not see your brain or your project.</p>
+                <p>More context = fewer hallucinations (made-up answers).</p>
+
+                <h4>Bad Prompt</h4>
+                <pre><code>Why is my layout broken?</code></pre>
+
+                <h4>Good Prompt</h4>
+                <pre><code>I am a beginner learning Flexbox.
+My navbar items stack vertically instead of horizontally.
+
+Here is my HTML and CSS:
+[paste code]
+
+Explain what is wrong.
+If information is missing, say "I don't know".</code></pre>
+
+                <p>Train AI to say <q>I don't know</q> instead of inventing answers.</p>
+            </article>
+
+            <article>
+                <h3>✅ FORMAT — How should the answer look?</h3>
+
+                <p>Tell AI exactly how to respond.</p>
+
+                <pre><code>Explain Flexbox in:
+- simple language
+- bullet points
+- one example
+- short explanation</code></pre>
+
+                <p>Clear format = usable answers.</p>
+            </article>
+
+            <article>
+                <h3>✅ PROMPT CLARITY (Meta Skill)</h3>
+
+                <p>If you cannot explain the problem clearly, AI cannot help you.</p>
+                <p>Good prompting improves your thinking, not AI intelligence.</p>
+                <p>AI does not become smarter — you become clearer.</p>
+
+            </article>
+        </section>
+
+        <section>
+            <h2>3. Responsible Use of AI (Very Important)</h2>
+
+            <h3>Use AI to:</h3>
+            <ul>
+                <li>understand concepts</li>
+                <li>debug errors</li>
+                <li>get explanations</li>
+                <li>practice learning</li>
+            </ul>
+
+            <h3>Do NOT use AI to:</h3>
+            <ul>
+                <li>blindly copy paste assignments</li>
+                <li>submit work you don't understand</li>
+                <li>replace learning</li>
+            </ul>
+
+            <blockquote>
+                <p>If you cannot explain your code, you did not learn it.</p>
+            </blockquote>
+
+        </section>
+
+        <section>
+            <h2>4. How Beginners Should Use AI</h2>
+
+            <article>
+                <h3>Step 1 — Learn a Concept</h3>
+                <pre><code>Act as a frontend instructor.
+Teach me CSS Flexbox like I am a beginner.
+Use simple examples only.</code></pre>
+            </article>
+
+            <article>
+                <h3>Step 2 — Ask for Small Steps</h3>
+                <pre><code>Give me a small exercise to practice Flexbox.
+Do not give the solution yet.</code></pre>
+            </article>
+
+            <article>
+                <h3>Step 3 — Try Yourself First</h3>
+                <p>Write code manually.</p>
+            </article>
+
+            <article>
+                <h3>Step 4 — Debug Properly</h3>
+                <pre><code>You are a debugging mentor.
+Do NOT fix the code directly.
+Guide me with hints.
+
+Here is my HTML/CSS:
+[paste code]
+
+Explain what I should check first.</code></pre>
+
+                <p>Learning happens during debugging.</p>
+            </article>
+
+            <article>
+                <h3>Step 5 — Verify Understanding</h3>
+                <pre><code>Ask me 3 questions to check if I understand Flexbox.</code></pre>
+            </article>
+
+        </section>
+
+        <section>
+            <h2>5. Debugging With AI (Best Beginner Workflow)</h2>
+
+            <ol>
+                <li>Read the error yourself</li>
+                <li>Guess the problem</li>
+                <li>Ask AI with context</li>
+                <li>Request hints, not solutions</li>
+                <li>Fix it yourself</li>
+                <li>Ask AI to explain why it worked</li>
+            </ol>
+
+        </section>
+
+        <section>
+            <h2>6. Advanced Idea (Just Awareness)</h2>
+
+            <h3>Chain of Thought (CoT)</h3>
+
+            <p>AI thinks step-by-step to reach one solution.</p>
+
+            <pre><code>Explain step by step how the browser renders HTML and CSS.</code></pre>
+
+            <p>(You do NOT need advanced techniques yet.)</p>
+
+        </section>
+
+        <section>
+            <h2>7. Golden Rule of AI</h2>
+
+            <p>All techniques exist to reduce guessing.</p>
+
+            <ul>
+                <li>Persona → Who answers</li>
+                <li>Context → What it knows</li>
+                <li>Format → How it responds</li>
+                <li>Clarity → Your thinking quality</li>
+            </ul>
+
+            <p>Bad results from AI usually mean unclear instructions.</p>
+
+        </section>
+
+        <section>
+            <h2>8. Final Mindset</h2>
+
+            <h3>AI is:</h3>
+            <ul>
+                <li>a learning assistant</li>
+                <li>a debugging partner</li>
+                <li>a thinking amplifier</li>
+            </ul>
+
+            <h3>AI is NOT:</h3>
+            <ul>
+                <li>your brain</li>
+                <li>your teacher replacement</li>
+                <li>your shortcut to skills</li>
+            </ul>
+
+            <p>The goal is not faster answers. The goal is better understanding.</p>
+
+            <h3>Before Using AI, Ask Yourself:</h3>
+            <ul>
+                <li>Can I explain my problem clearly?</li>
+                <li>Did I try first?</li>
+                <li>Do I understand the answer?</li>
+            </ul>
+
+            <p>If yes → You are using AI responsibly.</p>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
