@@ -52,7 +52,6 @@ main {
 
 .sidebar {
     flex: 1;
-    border: 1px solid red;
 }
 
 .sidebar-post {
