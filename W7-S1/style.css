@@ -26,12 +26,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    flex: 3;
 }
 
 .post-card {
     display: flex;
     flex-direction: column;
-    flex: 3;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -52,6 +52,7 @@ main {
 
 .sidebar {
     flex: 1;
+    border: 1px solid red;
 }
 
 .sidebar-post {
