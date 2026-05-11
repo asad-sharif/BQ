@@ -1,6 +1,9 @@
 import Card from './components/Card.jsx'
+import woods from './assets/woods.jpg'
 
 export default function App() {
+
+
   return (
     <div>
       <header className="text-center">
@@ -10,15 +13,16 @@ export default function App() {
 
       {/* post card container */}
       <section className='p-4 flex flex-col gap-4'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          img={woods}
+          title='this is title'
+          description='this is desc'
+        />
+        <Card
+          img={woods}
+          description='this is desc'
+        />
+
       </section>
     </div>
   )

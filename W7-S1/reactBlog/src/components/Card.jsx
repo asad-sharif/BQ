@@ -1,17 +1,18 @@
-import woods from '../assets/woods.jpg'
 
-export default function Card() {
+export default function Card(props) {
+    console.log(props);
+
     return (
         <div className='flex flex-col border'>
             {/* img */}
             <div className=''>
-                <img src={woods} alt="" />
+                <img src={props.img} alt="" />
             </div>
 
             {/* content */}
             <div className='px-2'>
-                <h2>title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, harum.</p>
+                {props.title && <h2>{props.title}</h2>}
+                <p>{props.description}</p>
             </div>
         </div>
     )
